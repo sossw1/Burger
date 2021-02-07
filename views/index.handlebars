@@ -1,11 +1,18 @@
-<h1>Order up!</h1>
+<div id="left-div">
+    <h1>Order up!</h1>
 
-{{!-- image of burger --}}
+    {{!-- image of burger --}}
 
-{{#each burgers}}
-{{#unless devoured}}
+    {{#each burgers}}
+    {{#unless devoured}}
     <h3>{{burger_name}}
-    <button id="{{id}}">Devour</button>
+        <button id="{{id}}">Devour</button>
     </h3>
-{{/unless}}
-{{/each}}
+    {{/unless}}
+    {{/each}}
+
+</div>
+<div id="right-div">
+    <h1>Devoured</h1>
+    <ul id="devoured-list"></ul>
+</div>
