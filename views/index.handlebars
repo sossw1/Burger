@@ -1,0 +1,11 @@
+<h1>Order up!</h1>
+
+{{!-- image of burger --}}
+
+{{#each burgers}}
+{{#unless devoured}}
+    <h3>{{burger_name}}
+    <button id="{{id}}">Devour</button>
+    </h3>
+{{/unless}}
+{{/each}}
