@@ -14,5 +14,11 @@
 </div>
 <div id="right-div">
     <h1>Devoured</h1>
-    <ul id="devoured-list"></ul>
+    <ul id="devoured-list">
+        {{#each burgers}}
+        {{#if devoured}}
+            <li>{{burger_name}}</li>
+        {{/if}}
+        {{/each}}
+    </ul>
 </div>
