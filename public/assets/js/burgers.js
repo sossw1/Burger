@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    if (event) {
-      console.info('DOM loaded');
-    }
-
     const devourButtons = document.querySelectorAll(".devour-button");
     if(devourButtons) {
         devourButtons.forEach((button) => {
