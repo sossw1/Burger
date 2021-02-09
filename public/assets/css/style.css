@@ -1,3 +1,7 @@
+#top-div {
+    width: 100%;
+}
+
 #left-div {
     float: left;
     width: 50%;
